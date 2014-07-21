@@ -1,6 +1,6 @@
 DataStructure
 =============
 
-Linked List, Queue, Stack
+Linked List, Queue, Stack, HashMap
 
-This is a collection of three data structures I created as practice.  
+This is a collection of four data structures I created as practice.  
