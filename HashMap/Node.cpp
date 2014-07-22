@@ -1,21 +1,24 @@
+//
+//  Node.cpp
+//  HashMap
+//
+//  Created by Ryan Wilcox on 7/22/14.
+//  Copyright (c) 2014 Ryan Wilcox. All rights reserved.
+//
+
 #include "Node.h"
 
-
-Node::Node(){}
+Node::Node():key(0),value(0)
+{		}
 
 Node::Node(int k,int v){
 	key = k;
 	value = v;
 }
 
-/*
- * Destructor	
- */
-Node::~Node(){}
-
 //returns key stored in Node
 int Node::getKey(){
-	return key; 
+	return key;
 }
 //returns value stored in Node
 int Node::getValue(){
