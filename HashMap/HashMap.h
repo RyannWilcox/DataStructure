@@ -6,6 +6,7 @@ class HashMap{
 		Node map[TABLE_SIZE];
 		
 	public:
+		
 		HashMap();
 		~HashMap();
 		
@@ -20,5 +21,9 @@ class HashMap{
 		 */
 		put(int key,int value);
 		
-		
+		/*
+		 * Creates a hash value for locating the
+		 * position in the hashMap
+		 */
+		hashFunction(int key);		
 };
