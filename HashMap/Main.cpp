@@ -1,6 +1,8 @@
 #include <iostream>
+#include "HashMap.h"
 
 int main (int argc, char const *argv[]){
-	std::cout<< "TEST TEST";
+	HashMap test;
+	std::cout<<"Object created" << std::endl;
 	return 0;
 }
