@@ -23,6 +23,12 @@ void HashMap::put(int key,int value){
 	std::cout<<"put";
 }
 
+ /*
+ * Creates number that shows where
+ * the value is in the HashMap
+ */
 int HashMap::hashFunction(int key){
-	return key;
+	int hashValue = 0;
+	hashValue = key % TABLE_SIZE;
+	return hashValue;
 }
