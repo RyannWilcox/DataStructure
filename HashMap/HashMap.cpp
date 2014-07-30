@@ -12,15 +12,30 @@
 
 HashMap::HashMap(){
 	std::cout<< "HashMap created" << std::endl;
+	for(int i = 0;i< TABLE_SIZE;i++){
+		map[i] = Node();
+	}
 }
 
 Node HashMap::get(int key){
+	int hashValue = hashFunction(key);
 	Node test;
 	return test;
 }
 
+/**
+ * Adds a (key,value) set to the map
+ */
 void HashMap::put(int key,int value){
-	std::cout<<"put";
+	int hashValue = hashFunction(key);
+	std::cout<< "Hash Value: " << hashValue <<std::endl;
+	if(map[hashValue].getKey() == NULL && map[hashValue].getValue() == NULL){
+		map[hashValue].setKey(key);
+		map[hashValue].setValue(value);
+	}
+	else{
+		map[hashValue].setValue(value);
+	}
 }
 
  /*
