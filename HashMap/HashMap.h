@@ -25,7 +25,7 @@ public:
 	 * returns the value of contained in the
 	 * node by using the key
 	 */
-	Node get(int key);
+	int get(int key);
 	
 	/*
 	 * Puts a value and key into a node in the map
