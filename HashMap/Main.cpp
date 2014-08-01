@@ -20,5 +20,10 @@ int main (int argc, char const *argv[]){
 	std::cout<<" val3 retrieved is: " << val3 << std::endl;
 	std::cout<<" val4 retrieved is: " << val4 << std::endl;
 	std::cout<<" val5 retrieved is: " << val5 << std::endl;
+	
+	test.remove(3);
+	
+	//This will fail because the key 3 and the value 34 have been removed
+	std::cout<< test.get(3);
 	return 0;
 }
