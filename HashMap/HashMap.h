@@ -33,6 +33,10 @@ public:
 	void put(int key,int value);
 	
 	/*
+	 * Removes an entry in the hash map
+	 */
+	void remove(int key);
+	/*
 	 * Creates a hash value for locating the
 	 * position in the hashMap
 	 */
