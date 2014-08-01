@@ -24,6 +24,7 @@ HashMap::HashMap(){
 int HashMap::get(int key){
 	int hashValue = hashFunction(key);
 	if(map[hashValue].getKey() != key && map[hashValue].getValue() == NULL){
+		std::cout<<"Could Not find the (key,value) pair" << std::endl;
 		return -1;
 	}
 	else{
@@ -49,6 +50,21 @@ void HashMap::put(int key,int value){
 	}
 }
 
+/*
+ * Tries to find the entry with the provided key.  If found
+ * that entry will be removed
+ */
+void HashMap::remove(int key){
+	int hashValue = hashFunction(key);
+	
+	if(map[hashValue].getKey() == key){
+		map[hashValue].setKey(NULL);
+		map[hashValue].setValue(NULL);
+	}
+	else{
+		std::cout << "Could not find a matching key in the hash map" << std::endl;
+	}
+}
  /*
  * Creates number that shows where
  * the value is in the HashMap
