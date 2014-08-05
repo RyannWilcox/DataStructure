@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Ryan Wilcox. All rights reserved.
 //
 
-#include "Node.h"
+#include "../header/Node.h"
 
 Node::Node():key(0),value(0)
 {		}

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "HashMap.h"
+#include "../header/HashMap.h"
 
 int main (int argc, char const *argv[]){
 	

@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Ryan Wilcox. All rights reserved.
 //
 
-#include "HashMap.h"
+#include "../header/HashMap.h"
 #include <iostream>
 
 
