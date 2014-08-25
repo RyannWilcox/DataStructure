@@ -15,25 +15,25 @@ int main (int argc, char const *argv[]){
       std::cin >> choice;
        switch(choice){
            case 1:
-			  		std::cout << "Enter an integer value for a key: \n";
-			  		std::cin >> key;
-			  		std::cout << "Enter an integer value: \n";
-			  		std::cin >> value;
-			  		map.put(key,value);
-					std::cout <<"(" <<key <<", "<< value << ") " << "Added to the Hash Map\n";
+		std::cout << "Enter an integer value for a key: \n";
+		std::cin >> key;
+		std::cout << "Enter an integer value: \n";
+		std::cin >> value;
+		map.put(key,value);
+		std::cout <<"(" <<key <<", "<< value << ") " << "Added to the Hash Map\n";
                break;
            case 2:
-			  		std::cout << "Enter an integer key: \n";
-					std::cin >> key; 
-			  	 	std::cout << "The value found is: " << map.get(key)<<std::endl;
+		std::cout << "Enter an integer key: \n";
+		std::cin >> key; 
+		std::cout << "The value found is: " << map.get(key)<<std::endl;
                break;
-			  case 3:
-			 	 	std::cout << "Enter an integer key: \n";
-			  	 	std::cin >> key;
-			  	 	map.remove(key);
-					break;
+	   case 3:
+		std::cout << "Enter an integer key: \n";
+		std::cin >> key;
+		map.remove(key);
+		break;
            case 4:
-			  		exit(0);
+		exit(0);
                break;
            default:
                std::cout<<"Please enter correct choice(1-4)";
